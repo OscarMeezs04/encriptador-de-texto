@@ -1,0 +1,21 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.Titulo{
+    text-align: center;
+    
+}
+
+.ReglasEncriptador{
+    margin: 1em 1em;
+    display: inline-block;
+    
+}
+
+.Lista{
+    margin: 1em 1em;
+    display: inline;
+}
+
