@@ -25,3 +25,19 @@ body{
     padding: 10px 25px;
     width: 50%;
 }
+
+.Boton{
+    
+    border-radius: 10px;
+    cursor: pointer;
+    transition:  .5s;
+}
+
+.Boton:hover{
+    transform: scale(1.2);
+}
+
+.Boton:active{
+
+    background: rgb(47, 206, 255);
+}
