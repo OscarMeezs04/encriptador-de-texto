@@ -34,12 +34,13 @@
         <main>
             <section class="Input">
                 <h2>Introduce el texto que quieras encriptar por aquí:</h2>
-                <input type="text" class="Caja" placeholder="Ingresa tu texto" id="MsjParaEncriptar">
+                <input type="text" class="Caja" placeholder="Ingresa tu texto" id="mensaje" inputmode="latin">
                 <input type="submit"  value="Encriptar" class="Boton" onclick="Encriptar()">
 
             </section>
             <section class="Output">
                 <h3>Tu texto encriptado se encuentra en la caja de abajo:</h3>
+                <p id="resultado"></p>
                 <input type="button" value="Copiar" class="Boton">
             </section>
 
