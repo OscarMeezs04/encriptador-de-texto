@@ -34,11 +34,30 @@ function Encriptar(){
 // Copiar en el portapapeles 
 async function copiarAlPortapapeles() {
     var resultado = document.getElementById('resultado').innerText;
-
-    try {
-      await navigator.clipboard.writeText(resultado);
-      alert('¡Texto copiado al portapapeles!');
-    } catch (err) {
-      console.error('Error al copiar al portapapeles:', err);
+    if (resultado ===''){
+        alert('¡No hay texto para copiar!');
+    } else{
+        try {
+            await navigator.clipboard.writeText(resultado);
+            alert('¡Texto copiado al portapapeles!');
+          } catch (err) {
+            console.error('Error al copiar al portapapeles:', err);
+          }
     }
+
+  }
+
+  async function copiarAlPortapapelesDes() {
+    var resultado = document.getElementById('res').innerText;
+    if (resultado ===''){
+        alert('¡No hay texto para copiar!');
+    } else{
+        try {
+            await navigator.clipboard.writeText(resultado);
+            alert('¡Texto copiado al portapapeles!');
+          } catch (err) {
+            console.error('Error al copiar al portapapeles:', err);
+          }
+    }
+
   }
