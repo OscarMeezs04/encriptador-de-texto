@@ -6,6 +6,14 @@ const clave= {
 'u': 'ufat'
 };
 
+const llave={
+    'enter': 'e',
+    'imes': 'i',
+    'ai': 'a',
+    'ober': 'o',
+    'ufat': 'u'
+}
+
 function Encriptar(){
     var mensaje = document.getElementById('mensaje').value;
     var resultado='';
@@ -19,8 +27,18 @@ function Encriptar(){
             } else{
                 resultado += char;
             }
-            
     }
-    
     document.getElementById('resultado').innerText=resultado;
 } 
+
+// Copiar en el portapapeles 
+async function copiarAlPortapapeles() {
+    var resultado = document.getElementById('resultado').innerText;
+
+    try {
+      await navigator.clipboard.writeText(resultado);
+      alert('¡Texto copiado al portapapeles!');
+    } catch (err) {
+      console.error('Error al copiar al portapapeles:', err);
+    }
+  }

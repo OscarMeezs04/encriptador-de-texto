@@ -41,18 +41,19 @@
             <section class="Output">
                 <h3>Tu texto encriptado se encuentra en la caja de abajo:</h3>
                 <p id="resultado"></p>
-                <input type="button" value="Copiar" class="Boton">
+                <input type="button" value="Copiar" class="Boton" onclick="copiarAlPortapapeles()">
             </section>
 
             <section class="Input">
                 <h2>Introduce el texto que quieras desencriptar aquí:</h2>
-                <input type="text" class="Caja" placeholder="Ingresa tu texto">
+                <input type="text" class="Caja" placeholder="Ingresa tu texto" id="desencriptar">
                 <input type="submit" value="Desencriptar" class="Boton" onclick="Desencriptar()">
             </section>
 
             <section class="Output">
                 <h3>Tu texto desencriptado se encuentra en la caja de abajo:</h3>
-                <input type="button" value="Copiar" class="Boton">
+                <p id="res"></p>
+                <input type="button" value="Copiar" class="Boton" onclick="copiarAlPortapapeles()">
             </section>
 
         </main>
