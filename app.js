@@ -1,9 +1,9 @@
 const clave= {
-'e': 'enter',
-'i': 'imes',
-'a': 'ai',
-'o': 'ober',
-'u': 'ufat'
+    'e': 'enter',
+    'i': 'imes',
+    'a': 'ai',
+    'o': 'ober',
+    'u': 'ufat'
 };
 
 const llave={
@@ -27,9 +27,30 @@ function Encriptar(){
             } else{
                 resultado += char;
             }
-    }
+    } 
+    
     document.getElementById('resultado').innerText=resultado;
 } 
+
+function Desencriptar(){
+    var mensaje = document.getElementById('desencriptar').value;
+    var res='';
+
+    for (var i = 0; i < mensaje.length; i++){
+        var char = mensaje[i];
+        if(char === 'enter' || char === 'imes' || char === 'ai' || char === 'ober' ||char === 'ufat' ){
+
+            res += llave[char];
+
+            } else{
+                res += char;
+            }
+            console.log (char);
+    }
+
+    document.getElementById('res').innerText=res;
+}
+
 
 // Copiar en el portapapeles 
 async function copiarAlPortapapeles() {

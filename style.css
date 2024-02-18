@@ -33,6 +33,10 @@ body{
     transition:  .5s;
 }
 
+.Output{
+    display: inline-block;
+}
+
 .Boton:hover{
     transform: scale(1.2);
 }
