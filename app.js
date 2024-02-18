@@ -6,14 +6,6 @@ const clave= {
     'u': 'ufat'
 };
 
-const llave={
-    'enter': 'e',
-    'imes': 'i',
-    'ai': 'a',
-    'ober': 'o',
-    'ufat': 'u'
-}
-
 function Encriptar(){
     var mensaje = document.getElementById('mensaje').value;
     var resultado='';
@@ -33,24 +25,20 @@ function Encriptar(){
 } 
 
 function Desencriptar(){
-    var mensaje = document.getElementById('desencriptar').value;
+    var msj = document.getElementById('desencriptar').value;
     var res='';
+    const RegExp = /(enter|imes|ai|ober|ufat)/g;
+    res = msj.replace(RegExp, (match) =>{
+        return{
+            'enter': 'e',
+            'imes': 'i',
+            'ai': 'a',
+            'ober': 'o',
+            'ufat': 'u'
+        } [match];});
+        document.getElementById('res').innerText=res;
 
-    for (var i = 0; i < mensaje.length; i++){
-        var char = mensaje[i];
-        if(char === 'enter' || char === 'imes' || char === 'ai' || char === 'ober' ||char === 'ufat' ){
-
-            res += llave[char];
-
-            } else{
-                res += char;
-            }
-            console.log (char);
-    }
-
-    document.getElementById('res').innerText=res;
 }
-
 
 // Copiar en el portapapeles 
 async function copiarAlPortapapeles() {
