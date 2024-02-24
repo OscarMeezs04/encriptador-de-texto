@@ -25,7 +25,7 @@ function Encriptar(){
 } 
 
 function Desencriptar(){
-    var msj = document.getElementById('desencriptar').value;
+    var msj = document.getElementById('mensaje').value;
     var res='';
     const RegExp = /(enter|imes|ai|ober|ufat)/g;
     res = msj.replace(RegExp, (match) =>{
@@ -36,7 +36,7 @@ function Desencriptar(){
             'ober': 'o',
             'ufat': 'u'
         } [match];});
-        document.getElementById('res').innerText=res;
+        document.getElementById('resultado').innerText=res;
 
 }
 
