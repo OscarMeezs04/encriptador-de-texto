@@ -7,12 +7,14 @@ const clave= {
 };
 
 //Mostrar instrucciones
+
 function Display(){
     var lis = document.getElementById('ReglasEncriptador');
-    if (lis.style.display === "none"){
-        lis.style.display = "block";
-    } else{
+
+    if (lis.style.display === "block"){
         lis.style.display = "none";
+    } else{
+        lis.style.display = "block";
     }
 
 }
@@ -52,6 +54,7 @@ function Desencriptar(){
         document.getElementById('resultado').innerText=res;
 
 }
+
 
 // Copiar en el portapapeles 
 async function copiarAlPortapapeles(targetID) {
