@@ -6,6 +6,19 @@ const clave= {
     'u': 'ufat'
 };
 
+//Mostrar instrucciones
+function Display(){
+    var lis = document.getElementById('ReglasEncriptador');
+    if (lis.style.display === "none"){
+        lis.style.display = "block";
+    } else{
+        lis.style.display = "none";
+    }
+
+}
+
+// Funciones para encriptar
+
 function Encriptar(){
     var mensaje = document.getElementById('mensaje').value;
     var resultado='';
