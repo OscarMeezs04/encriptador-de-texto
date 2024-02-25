@@ -1,0 +1,136 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #f3f5fc;
+}
+
+.Logo {
+    position: relative;
+    width: 120px; /* Removed "Fixed" */
+    height: 48px; /* Removed "Fixed" */
+    top: 40px;
+    left: 40px;
+    gap: 40px;
+}
+
+.Titulo {
+    text-align: center;
+    position: relative;
+    padding: auto;
+    color: #0a3871;
+}
+
+.SubTitulo {
+    color: #0a3871;
+}
+
+#ReglasEncriptador {
+    display: none;
+    margin: 0 auto;
+}
+
+.ListaReglas {
+    width: 100%; /* Adjusted to 100% for responsiveness */
+    display: block; /* Changed to block for responsiveness */
+}
+
+.Caja {
+    display: block; /* Changed to block for responsiveness */
+    position: relative;
+    width: 100%; /* Adjusted to 100% for responsiveness */
+    height: auto; /* Changed to auto for responsiveness */
+}
+
+.Boton {
+    background-color: #0a3871;
+    color: white;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.Boton:hover {
+    text-decoration: underline;
+    transition: 400ms;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#encriptador {
+    position: relative;
+    top: 3.2em;
+    right: 0; /* Adjusted to 0 for responsiveness */
+}
+
+#Des {
+    position: relative;
+    background-color: #D8DFE8;
+    color: black;
+    top: 3.2em;
+    right: 0; /* Adjusted to 0 for responsiveness */
+}
+
+#CajaTexto {
+    text-align: end;
+    position: relative;
+    bottom: 20.2em;
+}
+
+#resultado {
+    border-radius: 8px;
+    background-image: url(/Imagenes/Muneco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    width: 100%; /* Adjusted to 100% for responsiveness */
+    height: auto; /* Changed to auto for responsiveness */
+    left: 0; /* Adjusted to 0 for responsiveness */
+    bottom: 0; /* Adjusted to 0 for responsiveness */
+    position: relative;
+}
+
+#Copy {
+    position: relative;
+    bottom: 0; /* Adjusted to 0 for responsiveness */
+    left: 0; /* Adjusted to 0 for responsiveness */
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (min-width: 600px) {
+    .ListaReglas {
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .Caja {
+        width: 30em;
+        height: 30em;
+    }
+
+    #encriptador {
+        right: 26.5em;
+    }
+
+    #Des {
+        right: 20.5em;
+    }
+
+    #Copy {
+        left: 58em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ListaReglas,
+    .Caja,
+    #encriptador,
+    #Des,
+    #Copy {
+        width: 100%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        right: 0;
+        left: 0;
+    }
+}
