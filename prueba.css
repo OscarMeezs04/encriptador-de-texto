@@ -1,0 +1,59 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #f3f5fc;
+}
+
+.Logo{
+    width: Fixed (120px);
+    height: Fixed (48px);
+    top: 40px;
+    left: 40px;
+    gap: 40px;
+}
+
+.Titulo{
+    position: relative;
+    display: inline;
+    margin: 0.5em 2em;
+    text-align: center;
+}
+
+#ReglasEncriptador{
+    display: none;
+}
+
+
+.Caja{
+    position: relative;
+    width: 30em;
+    height: 20em;
+    border-radius: 10px;
+}
+
+#CajaTexto{
+    position: relative;
+    left: 50em;
+    bottom: 25em;
+}
+
+#resultado{
+    position: relative;
+    width: 30em;
+    height: 40em;
+    bottom: 36em;
+    left: 75em;
+    border-radius: 15px;    
+    background-image: url(/Imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Copy{
+    position: relative;
+    bottom: 33em;
+    left: 58em; 
+}
+
+
+
