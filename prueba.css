@@ -74,11 +74,11 @@ body {
     text-align: end;
     position: relative;
     bottom: 20.2em;
-    width: calc(50% - 10px); /* Adjusted to 50% of the width with 10px spacing */
+    width: calc(50% - 10px);
 }
 
 #mensaje {
-    margin-right: 10px; /* Added margin for spacing between #mensaje and #CajaTexto */
+    margin-right: 10px;
 }
 
 #resultado {
