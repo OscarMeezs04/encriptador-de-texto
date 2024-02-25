@@ -66,9 +66,8 @@ body{
 }
 
 #CajaTexto{
-    text-align: end;
-    bottom: 20.2em;
-    
+    text-align: left;
+    bottom: 20.2em; 
 }
 
 #resultado{
@@ -77,16 +76,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0px 24px 32px -8px #00000014;
-    width: 100%;
-    height: auto;
-    left: 0;
-    bottom: 0;
-    position: relative;
-
-}
-
-#Copy{
-   
 }
 
 /* Media Queries for responsiveness */
@@ -116,11 +105,11 @@ body{
 
     #CajaTexto,
     #mensaje {
-        width: calc(50% - 10px); /* Adjusted to 50% of the width with 10px spacing */
+        width: calc(50% - 10px);
     }
 
     #mensaje {
-        margin-right: 10px; /* Added margin for spacing between #mensaje and #CajaTexto */
+        margin-right: 10px; 
     }
 }
 
