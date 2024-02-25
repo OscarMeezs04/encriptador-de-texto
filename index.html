@@ -16,7 +16,7 @@
             <img src="Imagenes/Vector.png" alt="Logo Alura" class="Logo">
             <h1 class="Titulo">¡Bienvenido al Encriptador de Texto!</h1>
             <h2 class="SubTitulo">¿Como funciona el encriptador?</h2>
-            <input type="button" value="¡Muestrame!" onclick="Display()"></input>
+            <input type="button" value="¡Muestrame!" class="Boton" onclick="Display()"></input>
 
             <div id="ReglasEncriptador">
 
@@ -35,14 +35,14 @@
 
         <main>
             <section class="Input">
-                <h2>Introduce tu texto aquí:</h2>
-                <textarea class="Caja" placeholder="Ingresa tu texto" id="mensaje" inputmode="latin"> </textarea>
-                <input type="submit"  value="Encriptar" class="Boton" onclick="Encriptar()">
+                <h2 class="SubTitulo">Introduce tu texto aquí:</h2>
+                <textarea class="Caja" id="mensaje" inputmode="latin" placeholder="Ingresa tu texto aqui"> </textarea>
+                <input type="submit"  value="Encriptar" class="Boton" onclick="Encriptar()" id="encriptador">
                 <input type="submit" value="Desencriptar" class="Boton" onclick="Desencriptar()" id="Des">
 
             </section>
             <section>
-                <h3 id="CajaTexto">Tu texto encriptado se encuentra en la caja de abajo:</h3>
+                <h2 class="SubTitulo" id="CajaTexto">Tu texto encriptado se encuentra en esta caja:</h2>
                 <textarea id="resultado" readonly> </textarea>
                 <input type="button" value="Copiar" class="Boton" id="Copy" onclick="copiarAlPortapapeles(resultado)">
             </section>

@@ -1,57 +1,102 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    background-color: #f3f5fc;
 }
 
 .Logo{
+    position: relative;
     width: Fixed (120px);
     height: Fixed (48px);
     top: 40px;
     left: 40px;
     gap: 40px;
 }
-
 .Titulo{
-    position: relative;
-    display: inline;
-    margin: 0.5em 2em;
     text-align: center;
+    position: relative;
+    padding: auto;
+    color: #0a3871;
+}
+
+.SubTitulo{
+    color: #0a3871;
 }
 
 #ReglasEncriptador{
     display: none;
+    margin: 0 auto;
 }
 
+.ListaReglas{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
 
 .Caja{
+    display: inline;
     position: relative;
     width: 30em;
-    height: 20em;
-    border-radius: 10px;
+    height: 30em;
+}
+
+.Boton{
+    background-color: #0a3871;
+    color: white;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.Boton:hover{
+    text-decoration: underline;
+    transition: 400ms;
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}
+
+#encriptador{
+    position: relative;
+    top: 3.2em;
+    right: 26.5em;
+
+}
+
+#Des{
+    position: relative;
+    background-color: #D8DFE8;
+    color: black;
+    top: 3.2em;
+    right: 20.5em;
+
 }
 
 #CajaTexto{
+    text-align: end;
     position: relative;
-    left: 50em;
-    bottom: 25em;
+    bottom: 20.2em;
+    
 }
 
 #resultado{
-    position: relative;
-    width: 30em;
-    height: 40em;
-    bottom: 36em;
-    left: 75em;
-    border-radius: 15px;    
+    border-radius: 8px;    
     background-image: url(/Imagenes/Muñeco.png);
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    width: 30em;
+    height: 30em;
+    left: 75em;
+    bottom: 36em;
+    position: relative;
+
 }
 
 #Copy{
     position: relative;
     bottom: 33em;
-    left: 58em; 
+    left: 58em;
 }
 
 
